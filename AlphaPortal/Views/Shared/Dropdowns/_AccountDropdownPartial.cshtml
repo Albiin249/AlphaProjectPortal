@@ -1,0 +1,37 @@
+﻿@model MemberDisplayViewModel
+
+<div id="account-container">
+        <button type="button" data-type="dropdown" data-target="#account-dropdown" class="btn-account">
+            <img src="/@Model.ProfileImage" alt="avtar">
+        </button>
+        <div id="account-dropdown" class="dropdown">
+            <div class="dropdown-header">
+                <div class="account-name">
+                <img src="/@Model.ProfileImage" alt="avtar">
+                    <span>@Model.FirstName @Model.LastName</span>
+                </div>
+            </div>
+            <div class="dropdown-body">
+                <nav class="dropdown-options">
+                    <div class="dropdown-option">
+                        <label for="darkModeToggle" class="switch-label">
+                            <i class="fa-duotone fa-solid fa-cog"></i>
+                            <span>Dark Mode</span>
+                        </label>
+                        <label class="switch">
+                            <input type="checkbox" id="darkModeToggle" data-type="toggle"
+                                   data-func="darkmode">
+                            <span class="slider"></span>
+                        </label>
+                    </div>
+                </nav>
+            </div>
+            <div class="or-divider"></div>
+            <nav class="dropdown-actions">
+                <a class="dropdown-action" asp-controller="Auth" asp-action="Logout">
+                    <i class="fa-duotone fa-solid fa-right-from-bracket"></i>
+                    <span>Logout</span>
+                </a>
+            </nav>
+        </div>
+</div>

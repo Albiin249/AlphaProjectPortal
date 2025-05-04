@@ -1,0 +1,42 @@
+﻿@using Domain.Models
+@model StatusViewModel
+
+<div class="status-card card" data-status-id="@Model.Id">
+    <div class="card-header">
+        <div id="status-actions-container">
+            <button type="button" data-type="dropdown" data-target="#status-dropdown-@Model.Id"
+                    class="btn-action">
+                <i class="fa-solid fa-ellipsis"></i>
+            </button>
+            <div id="status-dropdown-@Model.Id" class="dropdown">
+                <div class="dropdown-body">
+                    <nav class="dropdown-actions">
+                        <button class="dropdown-action" data-type="modal"
+                                data-target="#edit-status-modal" data-action="edit-status"
+                                data-status-id="@Model.Id"
+                                data-status-name="@Model.StatusName">
+                            <i class="fa-duotone fa-solid fa-pen"></i>
+                            <span>Edit</span>
+                        </button>
+                    </nav>
+
+                </div>
+                <div class="or-divider"></div>
+                <nav class="dropdown-actions">
+                    <form asp-controller="Status" asp-action="Delete" method="post">
+                        <input type="hidden" name="id" value="@Model.Id" />
+                        <button type="submit" class="dropdown-action remove">
+                            <i class="fa-duotone fa-solid fa-trash"></i>
+                            <span>Delete Status</span>
+                        </button>
+                    </form>
+                </nav>
+            </div>
+        </div>
+
+    </div>
+    <div class="card-body">
+        <span class="user-email">ID: @Model.Id</span>
+        <span class="user-phone">NAME: @Model.StatusName</span>
+    </div>
+</div>

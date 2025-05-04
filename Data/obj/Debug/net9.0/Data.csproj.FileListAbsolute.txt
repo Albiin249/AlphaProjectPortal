@@ -1,0 +1,17 @@
+C:\Projects\ASP\AlphaPortal\Data\bin\Debug\net9.0\Data.deps.json
+C:\Projects\ASP\AlphaPortal\Data\bin\Debug\net9.0\Data.runtimeconfig.json
+C:\Projects\ASP\AlphaPortal\Data\bin\Debug\net9.0\Data.dll
+C:\Projects\ASP\AlphaPortal\Data\bin\Debug\net9.0\Data.pdb
+C:\Projects\ASP\AlphaPortal\Data\obj\Debug\net9.0\Data.csproj.AssemblyReference.cache
+C:\Projects\ASP\AlphaPortal\Data\obj\Debug\net9.0\Data.GeneratedMSBuildEditorConfig.editorconfig
+C:\Projects\ASP\AlphaPortal\Data\obj\Debug\net9.0\Data.AssemblyInfoInputs.cache
+C:\Projects\ASP\AlphaPortal\Data\obj\Debug\net9.0\Data.AssemblyInfo.cs
+C:\Projects\ASP\AlphaPortal\Data\obj\Debug\net9.0\Data.csproj.CoreCompileInputs.cache
+C:\Projects\ASP\AlphaPortal\Data\obj\Debug\net9.0\Data.dll
+C:\Projects\ASP\AlphaPortal\Data\obj\Debug\net9.0\refint\Data.dll
+C:\Projects\ASP\AlphaPortal\Data\obj\Debug\net9.0\Data.pdb
+C:\Projects\ASP\AlphaPortal\Data\obj\Debug\net9.0\Data.genruntimeconfig.cache
+C:\Projects\ASP\AlphaPortal\Data\obj\Debug\net9.0\ref\Data.dll
+C:\Projects\ASP\AlphaPortal\Data\bin\Debug\net9.0\Domain.dll
+C:\Projects\ASP\AlphaPortal\Data\bin\Debug\net9.0\Domain.pdb
+C:\Projects\ASP\AlphaPortal\Data\obj\Debug\net9.0\Data.csproj.Up2Date

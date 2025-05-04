@@ -1,0 +1,76 @@
+﻿@model SignUpViewModel
+@{
+    Layout = "_CenterWrapperLayout";
+    ViewData["Title"] = "Sign Up";
+}
+
+<section id="signup">
+    <div class="card">
+        <div class="card-header">
+            <h1>Create Account</h1>
+        </div>
+        <div class="card-body">
+            <form method="post" asp-controller="ExternalAuth" asp-action="Index" novalidate>
+                <button class="btn-external" type="submit">
+                    <img src="/images/icons/google-icon.svg" alt="Google Icon" />
+                    <span>Sign Up with Google</span>
+                </button>
+            </form>
+
+            <div class="or-divider"><span>OR</span></div>
+
+            <form method="post" asp-controller="Auth" asp-action="SignUp" novalidate>
+
+                <div class="form-group">
+                    <label class="form-label" asp-for="FirstName">First Name</label>
+                    <input class="form-input" asp-for="FirstName" />
+                    <span asp-validation-for="FirstName"></span>
+                </div>
+
+                <div class="form-group">
+                    <label class="form-label" asp-for="LastName">Last Name</label>
+                    <input class="form-input" asp-for="LastName" />
+                    <span asp-validation-for="LastName"></span>
+                </div>
+
+                <div class="form-group">
+                    <label class="form-label" asp-for="Email">Email</label>
+                    <input class="form-input" asp-for="Email" />
+                    <span asp-validation-for="Email"></span>
+                </div>
+
+                <div class="form-group">
+                    <label class="form-label" asp-for="Password">Password</label>
+                    <div class="password-wrapper">
+                        <input class="form-input" asp-for="Password" id="passwordInput" />
+                        <img src="/images/hide.svg" class="password-icon" alt="Show password" id="togglePassword" data-show="false" />
+                    </div>
+                    <span asp-validation-for="Password"></span>
+                </div>
+
+                <div class="form-group">
+                    <label class="form-label" asp-for="ConfirmPassword">Confirm Password</label>
+                    <div class="password-wrapper">
+                        <input class="form-input" asp-for="ConfirmPassword" id="confirmPasswordInput" />
+                        <img src="/images/hide.svg" class="password-icon" alt="Show password" id="toggleConfirmPassword" data-show="false" />
+                    </div>
+                    <span asp-validation-for="ConfirmPassword"></span>
+                </div>
+
+                <div class="form-checkbox-group-signup">
+                    <label class="form-checkbox">
+                        <input asp-for="Terms" class="form-checkbox-input" type="checkbox" />
+                        <span class="form-checkbox-box"></span>
+
+                        <label asp-for="Terms" class="form-label">I accept <a href="#">Terms and Conditions</a></label>
+                    </label>
+                    <span asp-validation-for="Terms"></span>
+                </div>
+                
+                <button type="submit" class="btn">Create Account</button>
+
+            </form>
+        </div>
+        <div class="card-footer">Already have an account? <a asp-controller="Auth" asp-action="Login">Log in</a></div>
+    </div>
+</section>

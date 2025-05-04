@@ -1,0 +1,49 @@
+﻿@using Domain.Models
+@model ClientViewModel
+
+<div class="member card" data-member-id="1">
+    <div class="card-header">
+        <div id="member-actions-container">
+            <button type="button" data-type="dropdown" data-target="#client-dropdown-@Model.Id"
+                    class="btn-action">
+                <i class="fa-solid fa-ellipsis"></i>
+            </button>
+            <div id="client-dropdown-@Model.Id" class="dropdown">
+                <div class="dropdown-body">
+                    <nav class="dropdown-actions">
+                        <button class="dropdown-action" data-type="modal"
+                                data-target="#edit-client-modal" data-action="edit-client"
+                                data-member-id="@Model.Id"
+                                data-name="@Model.ClientName"
+                                data-email="@Model.Email"
+                                data-phone="@Model.PhoneNumber">
+                            <i class="fa-duotone fa-solid fa-pen"></i>
+                            <span>Edit</span>
+                        </button>
+                    </nav>
+
+                </div>
+                <div class="or-divider"></div>
+                <nav class="dropdown-actions">
+                    <form asp-controller="Clients" asp-action="Delete" method="post">
+                        <input type="hidden" name="id" value="@Model.Id" /> 
+                        <button type="submit" class="dropdown-action remove">
+                            <i class="fa-duotone fa-solid fa-trash"></i>
+                            <span>Delete Client</span>
+                        </button>
+                    </form>
+                </nav>
+            </div>
+        </div>
+        <h4 class="user-name">@Model.ClientName</h4>
+
+    </div>
+    <div class="card-body">
+        <span class="user-email">
+            @(string.IsNullOrWhiteSpace(Model.Email) ? "N/A" : Model.Email)
+        </span>
+        <span class="user-phone">
+            @(string.IsNullOrWhiteSpace(Model.PhoneNumber) ? "N/A" : Model.PhoneNumber)
+        </span>
+    </div>
+</div>

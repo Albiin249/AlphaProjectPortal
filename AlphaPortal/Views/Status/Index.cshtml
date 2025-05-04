@@ -1,0 +1,25 @@
+﻿@model StatusesViewModel
+
+@{
+	ViewData["Title"] = "Statuses";
+}
+
+<div id="statuses" class="page">
+    <div class="page-header">
+        <h2>Statuses</h2>
+        <button type="button" class="btn" data-type="modal" data-target="#add-status-modal">
+            <i class="fa-duotone fa-solid fa-plus"></i>
+            <span>Add Status</span>
+        </button>
+    </div>
+
+    <section class="status-list">
+        @foreach (var status in Model.Statuses)
+        {
+            @await Html.PartialAsync("ListItems/_StatusListItemPartial", status)
+        }
+    </section>
+</div>
+
+@await Html.PartialAsync("Modals/_AddStatusModalPartial", Model.StatusViewModel)
+@await Html.PartialAsync("Modals/_EditStatusModalPartial", Model.StatusViewModel)

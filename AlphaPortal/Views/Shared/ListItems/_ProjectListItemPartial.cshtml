@@ -1,0 +1,74 @@
+﻿@using System.Net
+@model ProjectViewModel
+
+<div class="project card" data-project-id="@Model.Id">
+    <div class="card-header">
+        <div class="project-img">
+            <img src="/@Model.ProjectImage" alt="template project">
+        </div>
+        <h6 class="project-name">@Model.ProjectName</h6>
+        <span class="client-name">@Model.ClientName</span>
+        <div id="project-actions-container">
+            <button type="button" data-type="dropdown" data-target="#project-dropdown-@Model.Id" class="btn-action">
+                <i class="fa-solid fa-ellipsis"></i>
+            </button>
+            <div id="project-dropdown-@Model.Id" class="dropdown">
+                <div class="dropdown-body">
+                    <nav class="dropdown-actions">
+                        <button class="dropdown-action" data-type="modal" data-target="#edit-project-modal" data-action="edit-project" 
+                                data-project-id="@Model.Id"
+                                data-name="@Model.ProjectName"
+                                data-budget="@Model.Budget" 
+                                data-members='@Json.Serialize(Model.Members)'
+                                data-client-id="@Model.ClientId"
+                                data-description="@Model.Description"
+                                data-client-name="@Model.ClientName"
+                                data-status-id="@Model.StatusId"
+                                data-status-name="@Model.StatusName"
+                                data-start-date="@Model.StartDate?.ToString("yyyy-MM-dd")"
+                                data-end-date="@Model.EndDate?.ToString("yyyy-MM-dd")"
+                                data-image="@Model.ProjectImage">
+
+                            <i class="fa-duotone fa-solid fa-pen"></i>
+                            <span>Edit</span>
+                        </button>
+                    </nav>
+                    <nav class="dropdown-actions">
+                        <button class="dropdown-action" href="#">
+                            <i class="fa-duotone fa-solid fa-user-plus" style="--fa-primary-opacity: 0.4; --fa-secondary-opacity: 1;"></i>
+                            <span>Add Member</span>
+                        </button>
+                    </nav>
+                </div>
+                <div class="or-divider"></div>
+                <nav class="dropdown-actions">
+                    <form asp-controller="Projects" asp-action="Delete" method="post">
+                        <input type="hidden" name="id" value="@Model.Id" />
+                        <button type="submit" class="dropdown-action remove">
+                            <i class="fa-duotone fa-solid fa-trash"></i>
+                            <span>Delete Project</span>
+                        </button>
+                    </form>
+                </nav>
+            </div>
+        </div>
+    </div>
+    <div class="card-body">
+        <p>@Html.Raw(Model.Description)</p>
+    </div>
+    <div class="card-footer">
+        <div class="project-badge @(Model.IsNearDeadline ? "project-badge-danger" : "project-badge-normal")">
+            <i class="fa-duotone fa-solid fa-clock" style="--fa-primary-opacity: 01; --fa-secondary-opacity: 0.4;"></i>
+            <span>@Model.TimeLeft</span>
+        </div>
+        <div class="members">
+            @foreach (var member in Model.Members)
+            {
+                <div class="user-img">
+                    <img src="/@member.ProfileImage" alt="@member.FirstName" />
+                </div>
+            }
+        </div>
+
+    </div>
+</div>

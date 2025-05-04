@@ -1,0 +1,56 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - AlphaPortal</title>
+    <script type="importmap"></script>
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/microsoft-signalr/8.0.7/signalr.min.js" integrity="sha512-7SRCYIJtR6F8ocwW7UxW6wGKqbSyqREDbfCORCbGLatU0iugBLwyOXpzhkPyHIFdBO0K2VCu57fvP2Twgx1o2A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/quill@2.0.3/dist/quill.snow.css" rel="stylesheet" />
+    <script src="https://cdn.jsdelivr.net/npm/quill@2.0.3/dist/quill.js"></script>
+    <script src="~/js/tags.js" asp-append-version="true"></script>
+</head>
+<body>
+    @using Data.Entities
+    @using Microsoft.AspNetCore.Identity
+    @using AlphaPortal.Models
+    @inject UserManager<UserEntity> UserManager
+    @inject SignInManager<UserEntity> SignInManager
+    @{
+        MemberDisplayViewModel? member = null;
+
+        if (SignInManager.IsSignedIn(User))
+        {
+            var user = await UserManager.GetUserAsync(User);
+            member = new MemberDisplayViewModel
+                {
+                    FirstName = user?.FirstName ?? "Unknown",
+                    LastName = user?.LastName ?? "",
+                    ProfileImage = user?.ProfileImage ?? "/images/users/user-template-male.svg"
+                };
+        }
+        else
+        {
+            member = new MemberDisplayViewModel
+                {
+                    FirstName = "Guest",
+                    LastName = ""
+                };
+        }
+    }
+    <div class="backoffice-wrapper">
+        @await Html.PartialAsync("Partials/_SidebarPartial")
+        <main>
+            @await Html.PartialAsync("Partials/_HeaderPartial", member)
+             @RenderBody()
+        </main>
+    </div>
+
+    <script src="https://kit.fontawesome.com/0013e3fe0b.js" crossorigin="anonymous"></script>
+    <script src="~/js/cookie-consent.js" asp-append-version="true"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>

@@ -1,0 +1,95 @@
+﻿@model EditMemberViewModel
+<section class="modal modal-members" id="edit-member-modal">
+
+    <div class="card edit-member-card">
+        <div class="card-header">
+            <h3>Edit Member</h3>
+            <button class="btn-close" data-type="close-project-modal" data-target="#edit-member-modal"></button>
+        </div>
+        <div class="card-body">
+            <form asp-controller="Members" asp-action="Edit" method="post" enctype="multipart/form-data" novalidate>
+                <input type="hidden" asp-for="Id" name="Id" />
+                <div class="form-group">
+                    <div class="image-preview-container user-image" data-upload-trigger="upload-edit">
+                        
+                        <img id="edit-profile-preview" data-preview="upload-edit" src="/@Model.ExistingProfileImagePath" alt="test">
+                        <div data-container="upload-edit" class="circle circle-gray">
+                            <i data-icon="upload-edit" class="fa-duotone fa-solid fa-camera"></i>
+                        </div>
+                    </div>
+                    <input type="file" id="upload-edit" accept="image/*" class="hide" name="ProfileImage" asp-for="ProfileImage" />
+                    <input type="hidden" asp-for="ExistingProfileImagePath" />
+                </div>
+
+                <div class="form-group names">
+                    <div>
+                        <label class="form-label">First Name</label>
+                        <input class="form-input" type="text" placeholder="Your first name" asp-for="FirstName" />
+                        <span asp-validation-for="FirstName"></span>
+                    </div>
+                   
+                    <div>
+                        <label class="form-label">Last Name</label>
+                        <input class="form-input" type="text" placeholder="Your last name" asp-for="LastName" />
+                        <span asp-validation-for="LastName"></span>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label class="form-label">Email</label>
+                    <input class="form-input" type="text" placeholder="Your email address" asp-for="Email" />
+                    <span asp-validation-for="Email"></span>
+                </div>
+                
+                <div class="form-group">
+                    <label class="form-label">Phone</label>
+                    <input class="form-input" type="text" placeholder="Your phone number" asp-for="PhoneNumber" />
+                </div>
+
+                <div class="form-group">
+                    <label class="form-label">Job Title</label>
+                    <input class="form-input" type="text" placeholder="Your job title" asp-for="JobTitle" />
+                </div>
+
+                <div class="form-group">
+                    <label class="form-label">Address</label>
+                    <input class="form-input" type="text" name="Address.Address" value="@Model.Address?.Address" placeholder="Your address" />
+
+                </div>
+
+                <div class="form-group">
+                    <label class="form-label">Date of Birth</label>
+                    <div class="form-group-date" id="date-of-birth">
+                        <div class="form-select" data-placeholder="Day" data-dropdown="date-of-birth">
+                            <button type="button" class="form-select-trigger form-select-trigger-date">
+                                <span class="form-select-text"></span>
+                            </button>
+                            <ul class="form-select-options form-select-options-date" data-type="day"></ul>
+                            <input type="hidden" name="birth-day" value="" asp-for="BirthDay">
+                        </div>
+
+                        <div class="form-select" data-placeholder="Month" data-dropdown="date-of-birth">
+                            <button type="button" class="form-select-trigger form-select-trigger-date">
+                                <span class="form-select-text"></span>
+                            </button>
+                            <ul class="form-select-options form-select-options-date" data-type="month"></ul>
+                            <input type="hidden" name="birth-month" value="" asp-for="BirthMonth">
+                        </div>
+
+                        <div class="form-select" data-placeholder="Year" data-dropdown="date-of-birth">
+                            <button type="button" class="form-select-trigger form-select-trigger-date">
+                                <span class="form-select-text"></span>
+                            </button>
+                            <ul class="form-select-options form-select-options-date" data-type="year"></ul>
+                            <input type="hidden" name="birth-year" value="" asp-for="BirthYear">
+                        </div>
+                    </div>
+                </div>
+
+                <button type="submit" class="btn">Save</button>
+
+            </form>
+        </div>
+    </div>
+
+</section>

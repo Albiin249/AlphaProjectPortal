@@ -1,0 +1,61 @@
+﻿@model LoginViewModel
+
+@{
+    Layout = "_AdminLayout";
+    ViewData["Title"] = "Admin Sign In";
+
+}
+
+    <main class="page-divider">
+        <section id="welcome-page">
+            <h1>Welcome to <span class="orange-text">Admin Panel</span></h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ullamcorper nisl erat, vel convallis elit fermentum pellentesque. Sed mollis velit facilisis facilisis viverra.</p>
+        </section>
+        <section id="signin-admin">
+            <div class="card-admin">
+                <div class="card-header-admin">
+                    <h1>Login</h1>
+                </div>
+                <div class="card-body-admin">
+                    <form method="post" asp-contoller="" asp-action="" novalidate>
+                        <button class="btn-external" type="submit">
+                            <img src="/images/icons/google-icon.svg" alt="Google Icon" />
+                            <span>Log in with Google</span>
+                        </button>
+                    </form>
+
+                    <div class="or-divider"><span>OR</span></div>
+
+                    <form method="post" asp-contoller="Auth" asp-action="AdminLogin" novalidate>
+                        <div class="form-group">
+                            <label class="form-label">Email</label>
+                            <input class="form-input" asp-for="Email" placeholder="Your email address" />
+                            <span asp-validation-for="Email"></span>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="form-label">Password</label>
+                            <div class="password-wrapper">
+                                <input class="form-input" asp-for="Password" placeholder="Enter your password" id="passwordInput" />
+                                <img src="/images/hide.svg" class="password-icon" alt="Show password" id="togglePassword" data-show="false" />
+                            </div>
+                            <span asp-validation-for="Password"></span>
+                        </div>
+
+                        <div class="form-checkbox-group">
+                            <label class="form-checkbox">
+                                <input id="persistent-checkbox" class="form-checkbox-input" type="checkbox" />
+                                <span class="form-checkbox-box"></span>
+                            </label>
+                            <label for="persistent-checkbox" class="form-label">Remember Me</label>
+                            <a href="#">Forgot Password?</a>
+                        </div>
+
+                        <button type="submit" class="btn">Log In</button>
+
+                    </form>
+                </div>
+            </div>
+        </section>
+
+    </main>

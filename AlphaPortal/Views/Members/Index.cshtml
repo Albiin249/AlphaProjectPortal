@@ -1,0 +1,32 @@
+﻿@using Domain.Models
+@model MemberViewModel
+@{
+    ViewData["Title"] = "Members";
+}
+
+<div id="members" class="page">
+    <div class="page-header">
+        <h2>Team Members</h2>
+        <button type="button" class="btn" data-type="modal" data-target="#add-member-modal">
+            <i class="fa-duotone fa-solid fa-plus"></i>
+            <span>Add Member</span>
+        </button>
+    </div>
+
+    @if (TempData["ErrorMessage"] != null)
+    {
+        <div class="alert alert-danger" id="temp-error">
+            @TempData["ErrorMessage"]
+        </div>
+    }
+
+    <section class="member-list">
+        @foreach (var user in Model.User)
+        {
+            @await Html.PartialAsync("ListItems/_MemberListItemPartial", user)
+        }
+    </section>
+</div>
+
+@await Html.PartialAsync("Modals/_AddMemberModalPartial", Model.AddMemberViewModel)
+@await Html.PartialAsync("Modals/_EditMemberModalPartial", Model.EditMemberViewModel)

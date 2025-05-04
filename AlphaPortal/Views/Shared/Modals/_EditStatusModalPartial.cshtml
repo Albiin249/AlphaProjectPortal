@@ -1,0 +1,23 @@
+﻿@model StatusViewModel
+<section class="modal" id="edit-status-modal">
+
+    <div class="card">
+        <div class="card-header">
+            <h3>Edit Status</h3>
+            <button class="btn-close" data-type="close-project-modal" data-target="#edit-status-modal"></button>
+        </div>
+        <div class="card-body">
+            <form method="post" asp-controller="Status" asp-action="Edit" novalidate>
+                <input type="hidden" asp-for="Id" name="Id" />
+                <div class="form-group">
+                    <label class="form-label">Status Name</label>
+                    <input class="form-input" type="text" placeholder="Status name" asp-for="StatusName" />
+                </div>
+
+                <button type="submit" class="btn">Update Status</button>
+
+            </form>
+        </div>
+    </div>
+
+</section>

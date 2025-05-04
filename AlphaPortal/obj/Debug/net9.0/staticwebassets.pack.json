@@ -1,0 +1,281 @@
+{
+  "Files": [
+    {
+      "Id": "C:\\Projects\\ASP\\AlphaPortal\\AlphaPortal\\wwwroot\\css\\site.css",
+      "PackagePath": "staticwebassets\\css\\site.css"
+    },
+    {
+      "Id": "C:\\Projects\\ASP\\AlphaPortal\\AlphaPortal\\wwwroot\\favicon.ico",
+      "PackagePath": "staticwebassets\\favicon.ico"
+    },
+    {
+      "Id": "C:\\Projects\\ASP\\AlphaPortal\\AlphaPortal\\wwwroot\\images\\blur.png",
+      "PackagePath": "staticwebassets\\images\\blur.png"
+    },
+    {
+      "Id": "C:\\Projects\\ASP\\AlphaPortal\\AlphaPortal\\wwwroot\\images\\hide.svg",
+      "PackagePath": "staticwebassets\\images\\hide.svg"
+    },
+    {
+      "Id": "C:\\Projects\\ASP\\AlphaPortal\\AlphaPortal\\wwwroot\\images\\icons\\google-icon.svg",
+      "PackagePath": "staticwebassets\\images\\icons\\google-icon.svg"
+    },
+    {
+      "Id": "C:\\Projects\\ASP\\AlphaPortal\\AlphaPortal\\wwwroot\\images\\logotypes\\Logo.svg",
+      "PackagePath": "staticwebassets\\images\\logotypes\\Logo.svg"
+    },
+    {
+      "Id": "C:\\Projects\\ASP\\AlphaPortal\\AlphaPortal\\wwwroot\\images\\projects\\0d8a6be3-5_42a935d9-b_Image (1).svg",
+      "PackagePath": "staticwebassets\\images\\projects\\0d8a6be3-5_42a935d9-b_Image (1).svg"
+    },
+    {
+      "Id": "C:\\Projects\\ASP\\AlphaPortal\\AlphaPortal\\wwwroot\\images\\projects\\0f9e0c2f-1_Image (1).svg",
+      "PackagePath": "staticwebassets\\images\\projects\\0f9e0c2f-1_Image (1).svg"
+    },
+    {
+      "Id": "C:\\Projects\\ASP\\AlphaPortal\\AlphaPortal\\wwwroot\\images\\projects\\14b1598e-f_project-template.svg",
+      "PackagePath": "staticwebassets\\images\\projects\\14b1598e-f_project-template.svg"
+    },
+    {
+      "Id": "C:\\Projects\\ASP\\AlphaPortal\\AlphaPortal\\wwwroot\\images\\projects\\1d254bca-c_507d0854-5_Image (1).svg",
+      "PackagePath": "staticwebassets\\images\\projects\\1d254bca-c_507d0854-5_Image (1).svg"
+    },
+    {
+      "Id": "C:\\Projects\\ASP\\AlphaPortal\\AlphaPortal\\wwwroot\\images\\projects\\2265000f-4_Image (1).svg",
+      "PackagePath": "staticwebassets\\images\\projects\\2265000f-4_Image (1).svg"
+    },
+    {
+      "Id": "C:\\Projects\\ASP\\AlphaPortal\\AlphaPortal\\wwwroot\\images\\projects\\2d87d096-6_Image (1).svg",
+      "PackagePath": "staticwebassets\\images\\projects\\2d87d096-6_Image (1).svg"
+    },
+    {
+      "Id": "C:\\Projects\\ASP\\AlphaPortal\\AlphaPortal\\wwwroot\\images\\projects\\30b57054-7_0d8a6be3-5_42a935d9-b_Image (1).svg",
+      "PackagePath": "staticwebassets\\images\\projects\\30b57054-7_0d8a6be3-5_42a935d9-b_Image (1).svg"
+    },
+    {
+      "Id": "C:\\Projects\\ASP\\AlphaPortal\\AlphaPortal\\wwwroot\\images\\projects\\4c1f000c-1_507d0854-5_Image (1).svg",
+      "PackagePath": "staticwebassets\\images\\projects\\4c1f000c-1_507d0854-5_Image (1).svg"
+    },
+    {
+      "Id": "C:\\Projects\\ASP\\AlphaPortal\\AlphaPortal\\wwwroot\\images\\projects\\507d0854-5_Image (1).svg",
+      "PackagePath": "staticwebassets\\images\\projects\\507d0854-5_Image (1).svg"
+    },
+    {
+      "Id": "C:\\Projects\\ASP\\AlphaPortal\\AlphaPortal\\wwwroot\\images\\projects\\678ea355-f_project-template.svg",
+      "PackagePath": "staticwebassets\\images\\projects\\678ea355-f_project-template.svg"
+    },
+    {
+      "Id": "C:\\Projects\\ASP\\AlphaPortal\\AlphaPortal\\wwwroot\\images\\projects\\6e3354e9-c_5c9dafa0-c_Image (1).svg",
+      "PackagePath": "staticwebassets\\images\\projects\\6e3354e9-c_5c9dafa0-c_Image (1).svg"
+    },
+    {
+      "Id": "C:\\Projects\\ASP\\AlphaPortal\\AlphaPortal\\wwwroot\\images\\projects\\76c4efa7-2_507d0854-5_Image (1).svg",
+      "PackagePath": "staticwebassets\\images\\projects\\76c4efa7-2_507d0854-5_Image (1).svg"
+    },
+    {
+      "Id": "C:\\Projects\\ASP\\AlphaPortal\\AlphaPortal\\wwwroot\\images\\projects\\9655f22e-b_42a935d9-b_Image (1).svg",
+      "PackagePath": "staticwebassets\\images\\projects\\9655f22e-b_42a935d9-b_Image (1).svg"
+    },
+    {
+      "Id": "C:\\Projects\\ASP\\AlphaPortal\\AlphaPortal\\wwwroot\\images\\projects\\abe0a717-8_0f9e0c2f-1_Image (1).svg",
+      "PackagePath": "staticwebassets\\images\\projects\\abe0a717-8_0f9e0c2f-1_Image (1).svg"
+    },
+    {
+      "Id": "C:\\Projects\\ASP\\AlphaPortal\\AlphaPortal\\wwwroot\\images\\projects\\ac2f5faa-e_23dac898-6_Avatar.svg",
+      "PackagePath": "staticwebassets\\images\\projects\\ac2f5faa-e_23dac898-6_Avatar.svg"
+    },
+    {
+      "Id": "C:\\Projects\\ASP\\AlphaPortal\\AlphaPortal\\wwwroot\\images\\projects\\e0f78f0a-c_507d0854-5_Image (1).svg",
+      "PackagePath": "staticwebassets\\images\\projects\\e0f78f0a-c_507d0854-5_Image (1).svg"
+    },
+    {
+      "Id": "C:\\Projects\\ASP\\AlphaPortal\\AlphaPortal\\wwwroot\\images\\projects\\e419e299-7_6472aaea-b_e38b93ef-a_Image (1).svg",
+      "PackagePath": "staticwebassets\\images\\projects\\e419e299-7_6472aaea-b_e38b93ef-a_Image (1).svg"
+    },
+    {
+      "Id": "C:\\Projects\\ASP\\AlphaPortal\\AlphaPortal\\wwwroot\\images\\projects\\ff487876-b_7baeb6e6-3_Image (1).svg",
+      "PackagePath": "staticwebassets\\images\\projects\\ff487876-b_7baeb6e6-3_Image (1).svg"
+    },
+    {
+      "Id": "C:\\Projects\\ASP\\AlphaPortal\\AlphaPortal\\wwwroot\\images\\projects\\project-template.svg",
+      "PackagePath": "staticwebassets\\images\\projects\\project-template.svg"
+    },
+    {
+      "Id": "C:\\Projects\\ASP\\AlphaPortal\\AlphaPortal\\wwwroot\\images\\projects\\project-template.svg_1fe34331-405a-4988-9538-7c9345969ede",
+      "PackagePath": "staticwebassets\\images\\projects\\project-template.svg_1fe34331-405a-4988-9538-7c9345969ede"
+    },
+    {
+      "Id": "C:\\Projects\\ASP\\AlphaPortal\\AlphaPortal\\wwwroot\\images\\projects\\project-template.svg_f71067aa-0aea-4da6-95c8-94e25df61fd8",
+      "PackagePath": "staticwebassets\\images\\projects\\project-template.svg_f71067aa-0aea-4da6-95c8-94e25df61fd8"
+    },
+    {
+      "Id": "C:\\Projects\\ASP\\AlphaPortal\\AlphaPortal\\wwwroot\\images\\users\\00b36079-5_723210a0-5_7baeb6e6-3_Image (1).svg",
+      "PackagePath": "staticwebassets\\images\\users\\00b36079-5_723210a0-5_7baeb6e6-3_Image (1).svg"
+    },
+    {
+      "Id": "C:\\Projects\\ASP\\AlphaPortal\\AlphaPortal\\wwwroot\\images\\users\\130c8bf7-8_ca55d80e-8_user-template-male.svg",
+      "PackagePath": "staticwebassets\\images\\users\\130c8bf7-8_ca55d80e-8_user-template-male.svg"
+    },
+    {
+      "Id": "C:\\Projects\\ASP\\AlphaPortal\\AlphaPortal\\wwwroot\\images\\users\\23dac898-6_Avatar.svg",
+      "PackagePath": "staticwebassets\\images\\users\\23dac898-6_Avatar.svg"
+    },
+    {
+      "Id": "C:\\Projects\\ASP\\AlphaPortal\\AlphaPortal\\wwwroot\\images\\users\\2d0d5974-3_130c8bf7-8_ca55d80e-8_user-template-male.svg",
+      "PackagePath": "staticwebassets\\images\\users\\2d0d5974-3_130c8bf7-8_ca55d80e-8_user-template-male.svg"
+    },
+    {
+      "Id": "C:\\Projects\\ASP\\AlphaPortal\\AlphaPortal\\wwwroot\\images\\users\\367e1e0f-1_23dac898-6_Avatar.svg",
+      "PackagePath": "staticwebassets\\images\\users\\367e1e0f-1_23dac898-6_Avatar.svg"
+    },
+    {
+      "Id": "C:\\Projects\\ASP\\AlphaPortal\\AlphaPortal\\wwwroot\\images\\users\\3e9dc4fb-c_23dac898-6_Avatar.svg",
+      "PackagePath": "staticwebassets\\images\\users\\3e9dc4fb-c_23dac898-6_Avatar.svg"
+    },
+    {
+      "Id": "C:\\Projects\\ASP\\AlphaPortal\\AlphaPortal\\wwwroot\\images\\users\\4107662f-3_43ecfb2a-1_130c8bf7-8_ca55d80e-8_user-template-male.svg",
+      "PackagePath": "staticwebassets\\images\\users\\4107662f-3_43ecfb2a-1_130c8bf7-8_ca55d80e-8_user-template-male.svg"
+    },
+    {
+      "Id": "C:\\Projects\\ASP\\AlphaPortal\\AlphaPortal\\wwwroot\\images\\users\\42a935d9-b_Image (1).svg",
+      "PackagePath": "staticwebassets\\images\\users\\42a935d9-b_Image (1).svg"
+    },
+    {
+      "Id": "C:\\Projects\\ASP\\AlphaPortal\\AlphaPortal\\wwwroot\\images\\users\\43ecfb2a-1_130c8bf7-8_ca55d80e-8_user-template-male.svg",
+      "PackagePath": "staticwebassets\\images\\users\\43ecfb2a-1_130c8bf7-8_ca55d80e-8_user-template-male.svg"
+    },
+    {
+      "Id": "C:\\Projects\\ASP\\AlphaPortal\\AlphaPortal\\wwwroot\\images\\users\\49a65875-b_Avatar.svg",
+      "PackagePath": "staticwebassets\\images\\users\\49a65875-b_Avatar.svg"
+    },
+    {
+      "Id": "C:\\Projects\\ASP\\AlphaPortal\\AlphaPortal\\wwwroot\\images\\users\\52f69602-4_723210a0-5_7baeb6e6-3_Image (1).svg",
+      "PackagePath": "staticwebassets\\images\\users\\52f69602-4_723210a0-5_7baeb6e6-3_Image (1).svg"
+    },
+    {
+      "Id": "C:\\Projects\\ASP\\AlphaPortal\\AlphaPortal\\wwwroot\\images\\users\\5c9dafa0-c_Image (1).svg",
+      "PackagePath": "staticwebassets\\images\\users\\5c9dafa0-c_Image (1).svg"
+    },
+    {
+      "Id": "C:\\Projects\\ASP\\AlphaPortal\\AlphaPortal\\wwwroot\\images\\users\\6472aaea-b_e38b93ef-a_Image (1).svg",
+      "PackagePath": "staticwebassets\\images\\users\\6472aaea-b_e38b93ef-a_Image (1).svg"
+    },
+    {
+      "Id": "C:\\Projects\\ASP\\AlphaPortal\\AlphaPortal\\wwwroot\\images\\users\\659fbc86-a_723210a0-5_7baeb6e6-3_Image (1).svg",
+      "PackagePath": "staticwebassets\\images\\users\\659fbc86-a_723210a0-5_7baeb6e6-3_Image (1).svg"
+    },
+    {
+      "Id": "C:\\Projects\\ASP\\AlphaPortal\\AlphaPortal\\wwwroot\\images\\users\\723210a0-5_7baeb6e6-3_Image (1).svg",
+      "PackagePath": "staticwebassets\\images\\users\\723210a0-5_7baeb6e6-3_Image (1).svg"
+    },
+    {
+      "Id": "C:\\Projects\\ASP\\AlphaPortal\\AlphaPortal\\wwwroot\\images\\users\\7baeb6e6-3_Image (1).svg",
+      "PackagePath": "staticwebassets\\images\\users\\7baeb6e6-3_Image (1).svg"
+    },
+    {
+      "Id": "C:\\Projects\\ASP\\AlphaPortal\\AlphaPortal\\wwwroot\\images\\users\\9df9f056-2_23dac898-6_Avatar.svg",
+      "PackagePath": "staticwebassets\\images\\users\\9df9f056-2_23dac898-6_Avatar.svg"
+    },
+    {
+      "Id": "C:\\Projects\\ASP\\AlphaPortal\\AlphaPortal\\wwwroot\\images\\users\\Avatar.svg",
+      "PackagePath": "staticwebassets\\images\\users\\Avatar.svg"
+    },
+    {
+      "Id": "C:\\Projects\\ASP\\AlphaPortal\\AlphaPortal\\wwwroot\\images\\users\\a2d03b66-9_49a65875-b_Avatar.svg",
+      "PackagePath": "staticwebassets\\images\\users\\a2d03b66-9_49a65875-b_Avatar.svg"
+    },
+    {
+      "Id": "C:\\Projects\\ASP\\AlphaPortal\\AlphaPortal\\wwwroot\\images\\users\\ad21e773-6_49a65875-b_Avatar.svg",
+      "PackagePath": "staticwebassets\\images\\users\\ad21e773-6_49a65875-b_Avatar.svg"
+    },
+    {
+      "Id": "C:\\Projects\\ASP\\AlphaPortal\\AlphaPortal\\wwwroot\\images\\users\\af9643c2-e_Avatar.svg",
+      "PackagePath": "staticwebassets\\images\\users\\af9643c2-e_Avatar.svg"
+    },
+    {
+      "Id": "C:\\Projects\\ASP\\AlphaPortal\\AlphaPortal\\wwwroot\\images\\users\\b26b1910-c_52f69602-4_723210a0-5_7baeb6e6-3_Image (1).svg",
+      "PackagePath": "staticwebassets\\images\\users\\b26b1910-c_52f69602-4_723210a0-5_7baeb6e6-3_Image (1).svg"
+    },
+    {
+      "Id": "C:\\Projects\\ASP\\AlphaPortal\\AlphaPortal\\wwwroot\\images\\users\\b968e459-9_Image (1).svg",
+      "PackagePath": "staticwebassets\\images\\users\\b968e459-9_Image (1).svg"
+    },
+    {
+      "Id": "C:\\Projects\\ASP\\AlphaPortal\\AlphaPortal\\wwwroot\\images\\users\\big-template.svg",
+      "PackagePath": "staticwebassets\\images\\users\\big-template.svg"
+    },
+    {
+      "Id": "C:\\Projects\\ASP\\AlphaPortal\\AlphaPortal\\wwwroot\\images\\users\\c2d87f3e-a_project-template.svg",
+      "PackagePath": "staticwebassets\\images\\users\\c2d87f3e-a_project-template.svg"
+    },
+    {
+      "Id": "C:\\Projects\\ASP\\AlphaPortal\\AlphaPortal\\wwwroot\\images\\users\\ca55d80e-8_user-template-male.svg",
+      "PackagePath": "staticwebassets\\images\\users\\ca55d80e-8_user-template-male.svg"
+    },
+    {
+      "Id": "C:\\Projects\\ASP\\AlphaPortal\\AlphaPortal\\wwwroot\\images\\users\\d3133ab3-c_Avatar.svg",
+      "PackagePath": "staticwebassets\\images\\users\\d3133ab3-c_Avatar.svg"
+    },
+    {
+      "Id": "C:\\Projects\\ASP\\AlphaPortal\\AlphaPortal\\wwwroot\\images\\users\\d33b59a5-f_b968e459-9_Image (1).svg",
+      "PackagePath": "staticwebassets\\images\\users\\d33b59a5-f_b968e459-9_Image (1).svg"
+    },
+    {
+      "Id": "C:\\Projects\\ASP\\AlphaPortal\\AlphaPortal\\wwwroot\\images\\users\\d4d05586-a_af9643c2-e_Avatar.svg",
+      "PackagePath": "staticwebassets\\images\\users\\d4d05586-a_af9643c2-e_Avatar.svg"
+    },
+    {
+      "Id": "C:\\Projects\\ASP\\AlphaPortal\\AlphaPortal\\wwwroot\\images\\users\\d65c813a-b_49a65875-b_Avatar.svg",
+      "PackagePath": "staticwebassets\\images\\users\\d65c813a-b_49a65875-b_Avatar.svg"
+    },
+    {
+      "Id": "C:\\Projects\\ASP\\AlphaPortal\\AlphaPortal\\wwwroot\\images\\users\\e38b93ef-a_Image (1).svg",
+      "PackagePath": "staticwebassets\\images\\users\\e38b93ef-a_Image (1).svg"
+    },
+    {
+      "Id": "C:\\Projects\\ASP\\AlphaPortal\\AlphaPortal\\wwwroot\\images\\users\\e91585e3-4_23dac898-6_Avatar.svg",
+      "PackagePath": "staticwebassets\\images\\users\\e91585e3-4_23dac898-6_Avatar.svg"
+    },
+    {
+      "Id": "C:\\Projects\\ASP\\AlphaPortal\\AlphaPortal\\wwwroot\\images\\users\\user-template-male.svg",
+      "PackagePath": "staticwebassets\\images\\users\\user-template-male.svg"
+    },
+    {
+      "Id": "C:\\Projects\\ASP\\AlphaPortal\\AlphaPortal\\wwwroot\\js\\auth.js",
+      "PackagePath": "staticwebassets\\js\\auth.js"
+    },
+    {
+      "Id": "C:\\Projects\\ASP\\AlphaPortal\\AlphaPortal\\wwwroot\\js\\cookie-consent.js",
+      "PackagePath": "staticwebassets\\js\\cookie-consent.js"
+    },
+    {
+      "Id": "C:\\Projects\\ASP\\AlphaPortal\\AlphaPortal\\wwwroot\\js\\site.js",
+      "PackagePath": "staticwebassets\\js\\site.js"
+    },
+    {
+      "Id": "C:\\Projects\\ASP\\AlphaPortal\\AlphaPortal\\wwwroot\\js\\tags.js",
+      "PackagePath": "staticwebassets\\js\\tags.js"
+    },
+    {
+      "Id": "obj\\Debug\\net9.0\\staticwebassets\\msbuild.AlphaPortal.Microsoft.AspNetCore.StaticWebAssetEndpoints.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssetEndpoints.props"
+    },
+    {
+      "Id": "obj\\Debug\\net9.0\\staticwebassets\\msbuild.AlphaPortal.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net9.0\\staticwebassets\\msbuild.build.AlphaPortal.props",
+      "PackagePath": "build\\AlphaPortal.props"
+    },
+    {
+      "Id": "obj\\Debug\\net9.0\\staticwebassets\\msbuild.buildMultiTargeting.AlphaPortal.props",
+      "PackagePath": "buildMultiTargeting\\AlphaPortal.props"
+    },
+    {
+      "Id": "obj\\Debug\\net9.0\\staticwebassets\\msbuild.buildTransitive.AlphaPortal.props",
+      "PackagePath": "buildTransitive\\AlphaPortal.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

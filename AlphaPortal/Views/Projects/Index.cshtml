@@ -1,0 +1,35 @@
+﻿@using System.Text.Json
+@model ProjectsViewModel
+@{
+    ViewData["Title"] = "Projects";
+}
+
+<div id="projects" class="page">
+    <div class="page-header">
+        <h2>Projects</h2>
+        <button type="button" class="btn" data-type="modal" data-target="#add-project-modal">
+            <i class="fa-duotone fa-solid fa-plus"></i>
+            <span>Add Project</span>
+        </button>
+    </div>
+    
+    <div class="project-sort-box">
+        <a class="project-sort @(Context.Request.Path.Value!.Contains("/Projects") && !Context.Request.QueryString.HasValue ? "active" : "")" asp-action="Index" asp-route-status="">ALL [@Model.TotalCount]</a>
+        <a class="project-sort @(Context.Request.Path.Value!.Contains("/Projects") && Context.Request.Query["status"] == "1" ? "active" : "")" asp-action="Index" asp-route-status="1">STARTED [@Model.OngoingCount]</a>
+        <a class="project-sort @(Context.Request.Path.Value!.Contains("/Projects") && Context.Request.Query["status"] == "2" ? "active" : "")" asp-action="Index" asp-route-status="2">COMPLETED [@Model.CompletedCount]</a>
+    </div>
+
+    <section class="project-list">
+        @if (Model.Projects != null && Model.Projects.Any()) {
+            @foreach (var project in Model.Projects)
+            {
+                @await Html.PartialAsync("ListItems/_ProjectListItemPartial", project)
+            }
+        }
+        
+    </section>
+</div>
+
+@await Html.PartialAsync("Modals/_AddProjectModalPartial", Model.AddProjectFormData)
+@await Html.PartialAsync("Modals/_EditProjectModalPartial", Model.EditProjectFormData)
+
